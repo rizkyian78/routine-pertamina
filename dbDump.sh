@@ -14,8 +14,7 @@ BACKUP_NAME="$APP_NAME-$TIMESTAMP"
 # mongo admin --eval "printjson(db.fsyncUnlock())"
  
 # mv dump $BACKUP_NAME
-mongodump --host 13.250.19.123 --port 27017 -u nusantech -p '#Nu5anT3ch!!123' --authenticationDatabase admin --db directBuying --out=dump_pertamina/$BACKUP_NAME
-echo '#Nu5anT3ch!!123'
+mongodump --host 13.250.19.123 --port 27017 -u nusantech -p '#Nu5anT3ch!!123' --authenticationDatabase admin --db directBuying --out=dump_pertamina/$BACKUP_NAME --forceTableScan
 # mongodump --db directBuying --out=dump_pertamina/$BACKUP_NAME
 # tar -zcvf $BACKUPS_DIR/$BACKUP_NAME.tgz $BACKUP_NAME
 rm -rf $BACKUP_NAME
