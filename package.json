@@ -1,0 +1,16 @@
+{
+  "name": "routine_telkom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-cron": "^3.0.0",
+    "shelljs": "^0.8.4"
+  }
+}
